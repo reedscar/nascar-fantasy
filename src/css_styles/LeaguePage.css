@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.body, html {
+  background-image: url('https://img.freepik.com/premium-photo/asphalt-road-texture-background-flat-lay-top-view_41050-4412.jpg');
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: rgb(205, 203, 203);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.popup-buttons > button {
+    height: 60px;
+    width: 40%;
+    margin: 10px;
+    background-color: grey;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.popup-buttons > button:hover {
+  background-color: #138496;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+
+.league-creation {
+    position: relative;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 220px;
+    overflow-y: auto;
+    background-color: #6b6b6b; 
+    border: 2px solid #fcd116;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 12px rgba(252, 209, 22, 0.6);
+    z-index: 1000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.25s ease;
+  position: relative;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(90deg, #fcd116 20%, #000 80%);
+  color: #000;
+  font-weight: 900;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover::after {
+  content: "🏁";
+  position: absolute;
+  right: 15px;
+  font-size: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.league-page-main {
+    background-color: gray;
+    height: 100%;
+}
+
+.title-bar-leagues {
+    margin-top: 60px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.title-bar-leagues > p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+}
+
+.league-creation {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    border-bottom: 2px solid black;
+}
+
+.league-creation > button {
+    height: 60px;
+    width: 20%;
+    margin: 10px;
+    background-color: grey;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.league-creation > button:hover {
+  background-color: #138496;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.league-input {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  color: #000000;
+  background: linear-gradient(to right, #ffffff, #4a4a4a);
+  border: 2px solid #ff0000; /* red accent like a tail light */
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+  width: 50%;
+  margin: 10px;
+}
+
+.league-input::placeholder {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.league-input:focus {
+  border-color: #ffd700; /* yellow like NASCAR highlights */
+  box-shadow: 0 0 10px #ffd700;
+  background: linear-gradient(to right, #fcfcfc, #4f4f4f);
+}
+
+.popup-input {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  color: #000000;
+  background: linear-gradient(to right, #ffffff, #4a4a4a);
+  border: 2px solid #ff0000; /* red accent like a tail light */
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+  width: 80%;
+}
+
+.popup-input::placeholder {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.popup-input:focus {
+  border-color: #ffd700; /* yellow like NASCAR highlights */
+  box-shadow: 0 0 10px #ffd700;
+  background: linear-gradient(to right, #fcfcfc, #4f4f4f);
+}
+
+.league-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.league-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  margin: 10px;
+  border: 2px solid black;
+  width: 40%;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: 'Orbitron', sans-serif;
+  height: 50vh;
+}
+
+.league-card-button {
+  height: 60px;
+  width: 40%;
+  margin: 10px;
+  background-color: grey;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  margin-top: auto;
+}

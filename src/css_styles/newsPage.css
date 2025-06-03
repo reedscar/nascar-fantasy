@@ -1,0 +1,39 @@
+.news-page {
+    padding-top: 60px;
+    background-color: lightgray;
+}
+
+.newsTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsTitle > h1{
+    font-family: 'Orbitron', sans-serif;;
+}
+
+.news-feed {
+    background-image: url('https://img.freepik.com/premium-photo/asphalt-road-texture-background-flat-lay-top-view_41050-4412.jpg');
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-card {
+    background-color: lightgray;
+    margin: 10px;
+    width: 25%;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.news-card > p {
+    font-family: 'Orbitron', sans-serif;
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.login-page {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230612/pngtree-racing-car-is-going-at-speeds-down-an-asphalt-racetrack-image_2894230.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-top-decor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.nascar-logo {
+    width: 50vw;
+    height: 10vh;
+    ;
+}
+
+.login-title-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+}
+
+.login-box {
+    background-color: aqua;
+    width: 50vw;
+    height: 30vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+}
+
+.login-text {
+    width: 90%;
+    height: 10%;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-text:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.login-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button {
+    margin: 10px;
+    width: 10vh;
+    background-color: grey;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+button:hover {
+  background-color: #138496;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
